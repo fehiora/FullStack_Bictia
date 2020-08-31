@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sectionForm {
+    background-color: #C8B8DB;
+    padding-bottom: 3%;
+}
+
+h1{
+    padding: 2%;
+    text-align: center;
+    color: #502F4C;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    margin: 3% 3% 0% 3%;
+    padding: 2%;
+    background-color: #FFA69E;
+    color: #861657;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 10px;
+}
+
+main {
+    margin: 0% 3% 0% 3%;
+    padding: 3% 5%;
+    background-color: #93e1D8;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 50%;
+}
+
+table {
+    color: #861657;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+footer{
+    margin-top: 1%;
+    padding-top: 2%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.dias{
+    margin-top: 2%;
+    padding: 2%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+button{
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 100px;
+    background-color: #0ff4c6 ;
+    color: black;
+    font-weight: bold;
+}
+
+
+.formContact{
+    width: 40%;
+    margin: auto;
+    padding: 2%;
+    background-color: #F9F4F5;
+    display: flex; /*Se inicializa para poder usar propiedades en los hijos*/
+    flex-direction: column;
+}
+
+.contInput{
+    display: flex; /* Se utiliza para inicializar el trabajo con flexbox */
+    flex-direction: column;
+    margin-top: 5% ;
+    font-weight: bold;
+}
+
+/* Se selecciona la clase más cercana a la etiqueta que quiero modificar, entre más especificidad se tenga más va a predominar el estilo*/
+.contInput > label { 
+    margin-bottom: 5px;
+    color: #502F4C;
+}
+
+.contInput > input { 
+    padding: 1%;
+    border-radius: 15px;
+}
+
+/* .contInput > input:focus {  esta propiedad es para que al seleccionar se vea sombra
+    box-shadow: 0 0 6px black;
+} */
+
+.btnEnviar{
+    margin-top: 3%;
+    align-self: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px ;
+    font-size: 20px ;
+    background-color:  #502F4C;
+    color: white;
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    background-color: white;
+    color: #502F4C ;
+}
+
+small{
+  color: red;  
+  margin: 5px;
+  font-size: smaller;
+
+}
+
+.inputTyC{
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.inputTyC > label{
+    order:2 ; 
+}
+
+.fondoAlert{
+    background-color: rgba(200, 97, 97, 0.555)!important;
+}
+
+
+
