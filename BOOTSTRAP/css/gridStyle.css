@@ -1,0 +1,75 @@
+body{
+    background-color: gainsboro;
+}
+
+
+.contenHeader{
+    height: 100px;
+    background-color: rgb(0, 204, 255);
+}
+
+.main{
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.37);
+}
+
+.aside{
+    height: 300px;
+    background-color: rgba(250, 128, 114, 0.171);
+}
+
+.fooder{
+    height: 60px;
+    background-color: rgba(46, 139, 86, 0.575);
+}
+
+.header2{
+    margin-top:10%;
+    background-color: blue;
+    color: white;
+
+    height: 100px;
+}
+
+.articulo{
+    background-color: white;
+    color: black;
+    border: solid tomato 1px;
+}
+
+.article{
+    padding: 2%;
+    height: 200px;
+}
+
+.sidebar{
+    background-color: purple;
+    color: white;
+    height: 100px;
+    width: 100%;
+}
+
+/* Ejercicio flex con Boostrap */
+
+.fondodados{
+    margin-top: 2%;
+    padding: 5% 10%;
+    background-color: plum;
+    height: 300px;
+}
+
+.dados{
+    margin: 1%;
+    background-color: blueviolet;
+    border-radius:5px;
+    width: 100px;
+    height: 100px;
+    padding: 1%;
+}
+
+.punto{
+    border-radius: 50%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}

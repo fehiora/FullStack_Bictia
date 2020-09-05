@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/gridStyle.css">
+    <title>Practica.Boostrap</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="col contenHeader">
+                <p>MENU</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-lg-8 main">
+                <p>MAIN</p>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-4 aside">
+                <p>ASIDE</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col fooder">
+                <p>FOOTER</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Segundo ejercicio -->
+
+    <header class="container">
+        <div class="row">
+            <div class="col header2">
+                <p>Header</p>
+                <small>columnas 12</small>
+            </div>
+        </div>
+
+    </header>
+
+    <article class="container">
+        <div class="row">
+            <div class="col-8 article">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit iure consectetur animi cum
+                    amet harum labore, enim veritatis magnam, quibusdam ab aliquam reiciendis facilis? Voluptatem
+                    consectetur qui facere! Libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut exercitationem quia iusto in!
+                    Libero laborum incidunt officiis hic ea eos quidem similique. Architecto illo amet quae perferendis,
+                    fugit veritatis.</p>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+                <div class="sidebar">SIDEBAR</div>
+            </div>
+        </div>
+    </article>
+
+    <section class="container">
+        <div class="row">
+            <div class="col articulo">1</div>
+            <div class="col articulo">2</div>
+            <div class="col articulo">3</div>
+            <div class="col articulo">4</div>
+            <div class="col articulo">5</div>
+            <div class="col articulo">6</div>
+            <div class="col articulo">7</div>
+            <div class="col articulo">8</div>
+            <div class="col articulo">9</div>
+            <div class="col articulo">10</div>
+            <div class="col articulo">11</div>
+            <div class="col articulo">12</div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col fooder">
+                <p>FOOTER</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ejercicio Flex con Boostrap -->
+
+    <!-- El primer div contiene todos los dados y el fondo sobre el cual se visualizan -->
+    <div class="container fondodados">
+
+        <!-- El segundo div contiene el cuadrado de las caras con la clase d flex hace que todos los otros divs (caras de los dados) se posicionen de manera horizontal -->
+        <div class="d-flex">
+
+            <!-- Cara1 -->
+            <div class="dados d-flex justify-content-center">
+                <div class="punto align-self-center"></div>
+            </div>
+            <!-- Cara2 -->
+            <div class="dados d-flex justify-content-around">
+                <div class="punto align-self-start"></div>
+                <div class="punto align-self-end"></div>
+            </div>
+
+            <!-- Cara3 -->
+            <div class="dados d-flex justify-content-around">
+                <div class="punto align-self-start"></div>
+                <div class="punto align-self-center"></div>
+                <div class="punto align-self-end"></div>
+            </div>
+
+            <!-- Cara4 -->
+            <div class="dados d-flex justify-content-between flex-column">
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+
+            <!-- Cara5 -->
+            <div class="dados">
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="punto align-self-center"></div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+
+            <!-- Cara6 -->
+            <div class="dados d-flex justify-content-between flex-column">
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- A continuación los scripts de bootstrap -->
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
