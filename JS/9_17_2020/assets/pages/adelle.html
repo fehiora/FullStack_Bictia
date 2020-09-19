@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_LocalStorage</title>
+    <style>
+        .artista {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+
+<body>
+    <img src="./assets/img/Adelle.jfif" alt="">
+    <div class="artista">
+        <span>Nombre:</span>
+        <small id="nombre_html"></small>
+        <span>Nacionalidad:</span>
+        <small id="nacion_html"></small>
+        <span>Canción famosa:</span>
+        <small id="cancion_htmlm"></small>
+
+    </div>
+
+    <script>
+        const artista = {
+            nombre: "Adele",
+            nacionalidad: "Británica",
+            cancion: "Rolling In The Deep"
+        }
+
+        const artistaString = JSON.stringify(artista)
+        localStorage.setItem('datos_artista', artistaString)
+
+        console.log(artistaString)
+
+        const artistaStorageData = JSON.parse(localStorage.getItem('datos_artista'))
+
+        const nombreMostrar = document.getElementById('nombre_html')
+        nombreMostrar.innerText = artistaStorageData.nombre
+    </script>
+</body>
+
+</html>

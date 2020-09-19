@@ -45,50 +45,41 @@
 
     <header class="container">
         <div class="row">
-            <div class="col header2">
+            <div class="col-12 header2">
                 <p>Header</p>
-                <small>columnas 12</small>
+                <small>*col 12</small>
             </div>
         </div>
-
     </header>
 
-    <article class="container">
+    <main class="container">
         <div class="row">
-            <div class="col-8 article">
+            <div class="col-sm-12 col-md-8 article">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit iure consectetur animi cum
                     amet harum labore, enim veritatis magnam, quibusdam ab aliquam reiciendis facilis? Voluptatem
                     consectetur qui facere! Libero.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut exercitationem quia iusto in!
                     Libero laborum incidunt officiis hic ea eos quidem similique. Architecto illo amet quae perferendis,
                     fugit veritatis.</p>
+                    <small class="d-none d-md-block">*col 12</small>
+                    <small class="">*col 8</small>
             </div>
-            <div class="col-4 d-flex align-items-center">
+            <div class="col-sm-12 col-md-4 align-self-center">
                 <div class="sidebar">SIDEBAR</div>
             </div>
         </div>
-    </article>
+    </main>
 
-    <section class="container">
-        <div class="row">
-            <div class="col articulo">1</div>
-            <div class="col articulo">2</div>
-            <div class="col articulo">3</div>
-            <div class="col articulo">4</div>
-            <div class="col articulo">5</div>
-            <div class="col articulo">6</div>
-            <div class="col articulo">7</div>
-            <div class="col articulo">8</div>
-            <div class="col articulo">9</div>
-            <div class="col articulo">10</div>
-            <div class="col articulo">11</div>
-            <div class="col articulo">12</div>
+    <div class="container mt-5 ">
+        <div class="row py-5 justify-content-between">
+            <div class="col-sm-12 col-md-3 bg-warning py-3 ">widget_1</div>
+            <div class="col-sm-12 col-md-3 bg-warning py-3">widget_2</div>
+            <div class="col-sm-12 col-md-3 bg-warning py-3">widget_3</div>
         </div>
-    </section>
-
+    </div>
     <footer class="container">
         <div class="row">
-            <div class="col fooder">
+            <div class="col-12 fooder">
                 <p>FOOTER</p>
             </div>
         </div>
@@ -148,18 +139,34 @@
             </div>
 
             <!-- Cara6 -->
-            <div class="dados d-flex justify-content-between flex-column">
-                <div class="d-flex justify-content-between">
+            <div class="dados d-flex justify-content-between">
+                <div class="d-flex justify-content-between flex-column">
                     <div class="punto"></div>
                     <div class="punto"></div>
                     <div class="punto"></div>
                 </div>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between flex-column">
                     <div class="punto"></div>
                     <div class="punto"></div>
                     <div class="punto"></div>
                 </div>
             </div>
+
+        </div>
+
+
+        <!-- REPASO -->
+
+        <div class="container">
+            <div class="padre d-flex mb-3">
+                <div class="col bg-danger hijos"></div>
+                <div class="col bg-danger hijos"></div>
+                <div class="col bg-danger hijos"></div>
+                <div class="col bg-danger hijos"></div>
+                <div class="col bg-danger hijos"></div>
+
+            </div>
+
 
         </div>
 

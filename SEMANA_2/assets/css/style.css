@@ -10,7 +10,7 @@
     padding-bottom: 3%;
 }
 
-h1{
+h1 {
     padding: 2%;
     text-align: center;
     color: #502F4C;
@@ -36,7 +36,7 @@ main {
     background-color: #93e1D8;
 }
 
-.contenedor{
+.contenedor {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,7 +51,7 @@ table {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-footer{
+footer {
     margin-top: 1%;
     padding-top: 2%;
     background-color: black;
@@ -61,46 +61,48 @@ footer{
 }
 
 
-.dias{
+.dias {
     margin-top: 2%;
     padding: 2%;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
 }
 
-button{
+button {
     margin: 0.5%;
     padding: 0.5%;
     width: 100px;
-    background-color: #0ff4c6 ;
+    background-color: #0ff4c6;
     color: black;
     font-weight: bold;
 }
 
 
-.formContact{
+.formContact {
     width: 40%;
     margin: auto;
     padding: 2%;
     background-color: #F9F4F5;
-    display: flex; /*Se inicializa para poder usar propiedades en los hijos*/
+    display: flex;
+    /*Se inicializa para poder usar propiedades en los hijos*/
     flex-direction: column;
 }
 
-.contInput{
-    display: flex; /* Se utiliza para inicializar el trabajo con flexbox */
+.contInput {
+    display: flex;
+    /* Se utiliza para inicializar el trabajo con flexbox */
     flex-direction: column;
-    margin-top: 5% ;
+    margin-top: 5%;
     font-weight: bold;
 }
 
 /* Se selecciona la clase más cercana a la etiqueta que quiero modificar, entre más especificidad se tenga más va a predominar el estilo*/
-.contInput > label { 
+.contInput>label {
     margin-bottom: 5px;
     color: #502F4C;
 }
 
-.contInput > input { 
+.contInput>input {
     padding: 1%;
     border-radius: 15px;
 }
@@ -109,43 +111,40 @@ button{
     box-shadow: 0 0 6px black;
 } */
 
-.btnEnviar{
+.btnEnviar {
     margin-top: 3%;
     align-self: center;
     font-weight: bold;
     border: none;
     border-radius: 20px;
-    padding: 10px 20px ;
-    font-size: 20px ;
-    background-color:  #502F4C;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #502F4C;
     color: white;
     cursor: pointer;
 }
 
-.btnEnviar:hover{
+.btnEnviar:hover {
     background-color: white;
-    color: #502F4C ;
+    color: #502F4C;
 }
 
-small{
-  color: red;  
-  margin: 5px;
-  font-size: smaller;
+small {
+    color: red;
+    margin: 5px;
+    font-size: smaller;
 
 }
 
-.inputTyC{
+.inputTyC {
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.inputTyC > label{
-    order:2 ; 
+.inputTyC>label {
+    order: 2;
 }
 
-.fondoAlert{
-    background-color: rgba(200, 97, 97, 0.555)!important;
+.fondoAlert {
+    background-color: rgba(200, 97, 97, 0.555) !important;
 }
-
-
-
