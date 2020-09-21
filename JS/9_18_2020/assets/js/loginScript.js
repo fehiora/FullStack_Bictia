@@ -21,19 +21,20 @@ traerFormulario.addEventListener('submit', (e)=>{
 
             // usar el indice del arreglo con la variable de iteración
             if(email == arrayValidarUsuario[i].email && clave == arrayValidarUsuario[i].clave){
-                alert('Ingreso exitoso')
+                swal("Bienvenido","Ingreso Exitoso","success")
                 // añadir aqui una función que redirija a pagina de usuario
+                localStorage.setItem('sesion', JSON.stringify(arrayValidarUsuario[i]))
                 setTimeout(() =>{
                     window.location = '../pages/task.html'
-                },300)
+                },1000)
                 return true
             }
         }
 
-        alert('datos erroneos')
+        swal("Error", "Los datos no coinciden", "error")
 
     }else{
-        alert("No hay datos almacenados")
+        swal("No hay datos almacenados", "No hay datos almacenados", "error")
     }
     
 })

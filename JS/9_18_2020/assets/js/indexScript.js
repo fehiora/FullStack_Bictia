@@ -25,7 +25,7 @@ trayendoFormulario.addEventListener('submit', (e) => {
     }
 
     if (nombreUsuario != '' && emailUsuario != '' && claveUsuario != '') {
-        swal("Registro Exitoso","Registro Exitoso","success")
+        swal("Bien hecho!","Registro Exitoso","success")
         const usuarioObjeto = {
             nombre: nombreUsuario,
             email: emailUsuario,
@@ -37,7 +37,7 @@ trayendoFormulario.addEventListener('submit', (e) => {
             window.location = './assets/pages/login.html'
         },2000)
     } else {
-        swal("error", "Hay campos sin diligenciar", "error")
+        swal("Error", "Hay campos sin diligenciar", "error")
     }
 
 })
