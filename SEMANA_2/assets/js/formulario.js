@@ -35,7 +35,7 @@ function validarFormulario(evento) {
     if (inputName != '' && inputLastName != '' && inputAge != '' && inputEmail != '' && inputPasword != '' && inputTyC.checked == true) {
         swal("Muy bien", "Registro exitoso", "success")
         setTimeout(() => {
-            window.location = './///'
+            window.location = './assets/html/calculadora.html'
         }, 2000)
     } else {
         swal("error", "Hay campos sin diligenciar", "error")

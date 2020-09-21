@@ -1,0 +1,27 @@
+// const bienvenidaUsuario = document.getElementById('bienvenida_usuario')
+// const bienvenidaStorage = JSON.parse(localStorage.getItem('usuarios'))
+// bienvenidaUsuario.innerText = bienvenidaStorage.nombre
+
+
+
+
+
+function teclado(tecla) {
+
+    let traerPantalla = document.getElementById('pantalla')
+    let valorInpuntPantalla = traerPantalla.value
+    traerPantalla.value = valorInpuntPantalla + tecla
+
+    if (tecla == "ESPACIO") {
+        traerPantalla.value = valorInpuntPantalla + " "
+    }
+
+    if (tecla == "←") {
+        traerPantalla.value = valorInpuntPantalla.slice(0, -1)
+    }
+
+    if (tecla == "Borrar"){
+        traerPantalla.value = ""
+    }
+
+}
