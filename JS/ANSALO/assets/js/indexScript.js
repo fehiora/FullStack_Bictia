@@ -76,6 +76,16 @@ function botonReset(){
 
 //Función para usar el botón que va a la calculadora
 
-function botonCalc(){
+botonCalc.onclick =   function (){
+
+    let capturaLetras = inpuntLetras.value
+    let caputraNumeros = inputNumeros.value
+
+    if(capturaLetras == arregloLetras.join("") && caputraNumeros == arregloNumeros.join("")){
+
     window.location = './assets/pages/calculadora.html'
+
+    }else{
+        alert("Debes escribir todas las letras y números para ir a la calculadora")
+    }
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSALO</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="./assets/img/logo4.png" alt="logo4" width="60" height="60">
+    </header>
+
+    <main class=container>
+
+        <form class="inputs">
+            <label for="">LETRAS</label>
+            <input type="text" id="letras" disabled>
+            <label for="">NUMEROS</label>
+            <input type="text" id="numeros" disabled>
+            <input type="radio" id="retroTheme" name="themes" value="RETRO"></input>
+            <label for="retroTheme">RETRO</label>
+            <input type="radio" id="darkTheme" name="themes" value="DARK"></input>
+            <label for="darkTheme">DARK</label>
+        </form>
+
+        <div>
+            <div class="botones">
+                <button class="button" onclick="escribirBoton(0)">A-1</button>
+                <button class="button" onclick="escribirBoton(1)">B-2</button>
+                <button class="button" onclick="escribirBoton(2)">C-3</button>
+            </div>
+            <div class="botones">
+                <button class="button" onclick="escribirBoton(3)">D-4</button>
+                <button class="button" onclick="escribirBoton(4)">E-5</button>
+                <button class="button" onclick="escribirBoton(5)">F-6</button>
+            </div>
+            <div class="botones">
+                <button class="button" onclick="escribirBoton(6)">G-7</button>
+                <button class="button" onclick="escribirBoton(7)">H-8</button>
+                <button class="button" onclick="escribirBoton(8)">I-9</button>
+            </div>
+            <div class="botones">
+                <button class="button" id="botonCalc">CAL</button>
+                <button class="button" onclick="escribirBoton(9)">J-0</button>
+                <button class="button" onclick="botonReset()">RES</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <h6>Desarrollado por fehir@</h6>
+    </footer>
+
+    <script src="./assets/js/indexScript.js"></script>
+</body>
+
+</html>
