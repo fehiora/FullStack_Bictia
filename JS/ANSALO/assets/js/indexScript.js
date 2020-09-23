@@ -89,3 +89,36 @@ botonCalc.onclick =   function (){
         alert("Debes escribir todas las letras y números para ir a la calculadora")
     }
 }
+
+//Función para cambiar el tema de fondo
+const temaRetro = document.getElementById('retroTheme')
+temaRetro.addEventListener('click', ()=> {
+    const container = document.getElementById('body')
+    container.classList.remove('darkTheme')
+    container.classList.add('retro')
+    localStorage.setItem('tema', 'retro')
+})
+
+const temaDark = document.getElementById('darkTheme')
+temaDark.addEventListener('click', ()=> {
+    const container = document.getElementById('body')
+    container.classList.remove('retro')
+    container.classList.add('dark')
+    localStorage.setItem('tema', 'dark')
+})
+
+//Función para conservar tema en localStorage
+
+const temaEnStorage = () =>{
+    const temaGuardado = localStorage.getItem('tema')
+    const container = document.getElementById('body')
+    if (temaGuardado == 'retro'){
+        container.classList.add('retro')
+    }else if (temaGuardado == 'dark'){
+        container.classList.add('dark')
+    }
+}
+
+temaEnStorage()
+
+
