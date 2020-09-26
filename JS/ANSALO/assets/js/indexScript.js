@@ -76,7 +76,7 @@ function botonReset(){
 
 //Función para usar el botón que va a la calculadora
 
-botonCalc.onclick =   function (){
+botonCalc.onclick = function (){
 
     let capturaLetras = inpuntLetras.value
     let caputraNumeros = inputNumeros.value

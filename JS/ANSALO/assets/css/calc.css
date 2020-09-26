@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/fondo_mtcs.jpg');
+}
+
+.header{
+    background-color: #E83151;
+}
+
+.fondo{
+    background-color: #F5D7E3;
+}
+
+#pantalla{
+    text-align: right;
+}
+
+#acumulado{
+    text-align: right;
+}
